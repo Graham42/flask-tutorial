@@ -13,3 +13,7 @@ def home():
         things=my_stuff,
         show_flask_logo=True
     )
+
+@app.route('/other_page/')
+def other():
+    return render_template('other_page.html')
