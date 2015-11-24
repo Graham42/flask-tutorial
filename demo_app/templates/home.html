@@ -5,6 +5,13 @@
 </head>
 
 <body>
+
+  {% if show_flask_logo %}
+    <img src="//flask.pocoo.org/static/logo.png">
+  {% else %}
+    <p>Flask logo is hidden</p>
+  {% endif %}
+
   <p>Hello World</p>
 </body>
 </html>
