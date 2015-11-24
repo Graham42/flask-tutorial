@@ -78,3 +78,19 @@ workon flask-demo
 python server.py
 ```
 
+You should be able to view this webpage at http://localhost:3000
+
+## Building our HTML
+
+Flask uses a templating library called Jinja.
+[Here is the documentation](http://jinja.pocoo.org/docs/dev/templates/)
+
+## Routing
+
+We can have more pages. Add new annotated function in `__init__.py`.
+
+### Error pages
+
+http://flask.pocoo.org/docs/0.10/patterns/errorpages/
+
+Might have broken links, a server error, or maybe someone tries to go to pages that don't exist.
