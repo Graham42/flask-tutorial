@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Flask Demo - Hello World</title>
+  <title>Flask Demo - Templating</title>
 </head>
 
 <body>
@@ -13,5 +13,12 @@
   {% endif %}
 
   <p>Hello World</p>
+
+  <ul>
+    {% for item in things %}
+      <li>I have a {{ item[0] }} named {{ item[1] }}</li>
+    {% endfor %}
+  </ul>
+
 </body>
 </html>
