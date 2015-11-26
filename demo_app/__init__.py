@@ -14,6 +14,15 @@ def home():
         show_flask_logo=True
     )
 
-@app.route('/other_page/')
-def other():
-    return render_template('other_page.html')
+@app.route('/news/')
+def news():
+    with open('demo_app/headlines.txt') as f:
+        headlines = [line.strip('\n') for line in f.readlines()]
+
+    return render_template('news.html', headlines=headlines)
+
+@app.route('/news/<headline>')
+def news_post(headline):
+    return render_template('news_post.html',
+        title='Breaking News!',
+        subtitle=headline)

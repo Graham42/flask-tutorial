@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+  <h1>News That's Probably Not Happening!</h1>
+
+  {% for item in headlines %}
+    <h3><a href="{{ url_for('news_post', headline=item) }}">{{ item }}</a></h3>
+  {% endfor %}
+
+{% endblock %}
