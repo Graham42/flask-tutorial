@@ -4,6 +4,9 @@ This is a demo of Flask for a lecture in an intro to web dev class.  If you're l
 Flask I would instead recomment you follow [this
 tutorial](http://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world).
 
+The finished code for this demo is available here:
+[releases/tag/1.6-errorhandling-page](https://github.com/Graham42/flask-tutorial/releases/tag/1.6-errorhandling-page)
+
 ----
 # Notes
 
